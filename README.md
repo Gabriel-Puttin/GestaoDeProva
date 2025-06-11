@@ -31,6 +31,7 @@ API para gerenciamento de alunos e provas, desenvolvida em .NET 9.0 com Entity F
    ```Acesse
    http://localhost:5000/swagger
    ```
+<img src="/images/print_dotnet_run.png">.
 
 ## 🛠️ Tecnologias utilizadas
 * .NET 9.0
@@ -72,7 +73,7 @@ curl -X POST "http://localhost:5000/api/aluno" \
 ## 🤝 Contribuição
 1. Faça um clone do projeto
    ```
-   git clone
+   git clone https://github.com/Gabriel-Puttin/GestaoDeProva.git
    ```
 
 2. Crie uma branch
