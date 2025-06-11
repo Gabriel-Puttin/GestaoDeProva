@@ -18,77 +18,82 @@ API para gerenciamento de alunos e provas, desenvolvida em .NET 9.0 com Entity F
    ```bash
    git clone https://github.com/seu-usuario/gestao-de-provas.git
    cd gestao-de-provas/src/GestaoDeProvas
-Configure o banco de dados
+   ```
+2. **Configure o banco de dados**
+   ```bash
+   dotnet ef database update
+   ```
+3. **Inicie a aplicação**
+   ```bash
+   dotnet run
+   ```
+4. **Usando Swagger UI**
+   ```Acesse
+   http://localhost:5000/swagger
+   ```
 
-bash
-dotnet ef database update
+## 🛠️ Tecnologias utilizadas
+* .NET 9.0
+* Entity Framework Core 9.0
+* Swagger/OpenAPI
+* SQL Server
+* Padrões de Projeto
+* Repository Pattern
+* DTOs (Data Transfer Objects)
+* Injeção de Dependência
 
-Inicie a aplicação
 
-bash
-dotnet run
-
-🛠️ Tecnologias utilizadas
-Backend
-
-.NET 9.0
-
-Entity Framework Core 9.0
-
-Swagger/OpenAPI
-
-SQL Server
-
-Padrões de Projeto
-
-Repository Pattern
-
-DTOs (Data Transfer Objects)
-
-Injeção de Dependência
-
-📚 Documentação da API
+## 📚 Documentação da API
 Endpoints disponíveis
-Método	Endpoint	Descrição
-POST	/api/aluno	Cadastra um novo aluno
-GET	/api/aluno	Lista todos os alunos
-GET	/api/aluno/{id}	Obtém detalhes de um aluno
-PUT	/api/aluno/{id}	Atualiza os dados de um aluno
-DELETE	/api/aluno/{id}	Remove um aluno
+
+* POST	/api/aluno	Cadastra um novo aluno
+* GET	/api/aluno	Lista todos os alunos
+* GET	/api/aluno/{id}	Obtém detalhes de um aluno
+* PUT	/api/aluno/{id}	Atualiza os dados de um aluno
+* DELETE	/api/aluno/{id}	Remove um aluno
+
 Modelo de dados
-json
+```
 {
   "alunoId": 1,
   "nome": "João Silva",
   "email": "joao@email.com"
 }
-🧪 Testando a API
-Usando Swagger UI:
+```
 
-Acesse http://localhost:5000/swagger
+Via CURL:
 
-Execute os endpoints diretamente na interface
-
-Via cURL:
-
-bash
+```bash
 # Criar aluno
 curl -X POST "http://localhost:5000/api/aluno" \
   -H "Content-Type: application/json" \
   -d '{"nome":"Maria Oliveira","email":"maria@email.com","senha":"123456"}'
-🤝 Contribuição
-Faça um fork do projeto
+```
+## 🤝 Contribuição
+1. Faça um clone do projeto
+   ```
+   git clone
+   ```
 
-Crie uma branch (git checkout -b feature/nova-feature)
+2. Crie uma branch
+   ```
+   git checkout -b <nome da sua branch>
+   ```
 
-Commit suas alterações (git commit -m 'Adiciona nova feature')
+3. Commit suas alterações
+   ```
+   git commit -m <mensagem>
+   ```
 
-Push para a branch (git push origin feature/nova-feature)
+4. Push para a branch (git push origin feature/nova-feature)
+   ```
+   git push origin <nome da sua branch>
+   ```
 
-Abra um Pull Request
+5. Abra um Pull Request
 
-📄 Licença
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
+## 📄 Licença
+Este projeto é de uso livre para fins educacionais e demonstrativos.
 
-✉️ Contato
-Gabriel Puttin - seu-email@exemplo.com
+## ✉️ Contato
+Gabriel Puttin - gabrielputtin@hotmail.com
