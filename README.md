@@ -31,7 +31,7 @@ API para gerenciamento de alunos e provas, desenvolvida em .NET 9.0 com Entity F
    ```Acesse
    http://localhost:5000/swagger
    ```
-<img src="/images/print_dotnet_run.png">.
+<img src="/Images/SwaggerUI.png">.
 
 ## 🛠️ Tecnologias utilizadas
 * .NET 9.0
